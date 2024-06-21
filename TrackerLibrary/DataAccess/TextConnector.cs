@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrackerLibrary.Models;
-using TrackerLibrary.DataAccess.TextHelpers
+using TrackerLibrary.DataAccess.TextHelpers;
 
 namespace TrackerLibrary.DataAccess
 {
@@ -23,6 +23,8 @@ namespace TrackerLibrary.DataAccess
             prizes.Add(model);
 
             prizes.SaveToPrizeFile(PrizesFile);
+
+            return model;
         }
     }
 }

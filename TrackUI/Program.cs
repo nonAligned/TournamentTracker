@@ -12,7 +12,7 @@ namespace TrackUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.Sql);
+            TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.TextFile);
 
             // Application.Run(new TournamentDashboardForm());
             Application.Run(new CreatePrizeForm());
