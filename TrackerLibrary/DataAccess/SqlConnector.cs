@@ -11,7 +11,11 @@ namespace TrackerLibrary.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
-        // TODO - Make the CreatePrize method actually save to the database
+        public PersonModel CreatePerson(PersonModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Saves a new prize to the database.
         /// </summary>
