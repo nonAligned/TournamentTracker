@@ -21,7 +21,7 @@ namespace TrackUI
 
         private void createMemberButton_Click(object sender, EventArgs e)
         {
-            if(ValidateForm())
+            if (ValidateForm())
             {
                 PersonModel p = new PersonModel();
 
@@ -31,6 +31,11 @@ namespace TrackUI
                 p.CellphoneNumber = cellphoneValue.Text;
 
                 GlobalConfig.Connection.CreatePerson(p);
+
+                firstNameValue.Text = "";
+                lastNameValue.Text = "";
+                emailValue.Text = "";
+                cellphoneValue.Text = "";
             }
             else
             {
@@ -44,7 +49,7 @@ namespace TrackUI
             {
                 return false;
             }
-            if (lasttNameValue.Text.Length == 0)
+            if (lastNameValue.Text.Length == 0)
             {
                 return false;
             }
@@ -56,5 +61,8 @@ namespace TrackUI
             {
                 return false;
             }
+
+            return true;
         }
+    }
 }
