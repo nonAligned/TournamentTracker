@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tournamentNameValue = new TextBox();
+            teamNameValue = new TextBox();
             teamNameLabel = new Label();
             headerLabel = new Label();
             addMemberButton = new Button();
@@ -50,13 +50,13 @@
             addNewMemberGroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // tournamentNameValue
+            // teamNameValue
             // 
-            tournamentNameValue.BorderStyle = BorderStyle.FixedSingle;
-            tournamentNameValue.Location = new Point(28, 141);
-            tournamentNameValue.Name = "tournamentNameValue";
-            tournamentNameValue.Size = new Size(508, 43);
-            tournamentNameValue.TabIndex = 13;
+            teamNameValue.BorderStyle = BorderStyle.FixedSingle;
+            teamNameValue.Location = new Point(28, 141);
+            teamNameValue.Name = "teamNameValue";
+            teamNameValue.Size = new Size(508, 43);
+            teamNameValue.TabIndex = 13;
             // 
             // teamNameLabel
             // 
@@ -267,6 +267,7 @@
             createTeamButton.TabIndex = 25;
             createTeamButton.Text = "Create Team";
             createTeamButton.UseVisualStyleBackColor = true;
+            createTeamButton.Click += createTeamButton_Click;
             // 
             // CreateTeamForm
             // 
@@ -280,7 +281,7 @@
             Controls.Add(addMemberButton);
             Controls.Add(selectTeamMemberDropDown);
             Controls.Add(selectTeamMemberLabel);
-            Controls.Add(tournamentNameValue);
+            Controls.Add(teamNameValue);
             Controls.Add(teamNameLabel);
             Controls.Add(headerLabel);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -295,7 +296,7 @@
 
         #endregion
 
-        private TextBox tournamentNameValue;
+        private TextBox teamNameValue;
         private Label teamNameLabel;
         private Label headerLabel;
         private Button addMemberButton;
