@@ -27,19 +27,21 @@ namespace TrackUI
 
         private void CreateSampleData()
         {
-            availableTeamMembers.Add(new PersonModel { FirstName = "John", LastName = "Dough"});
-            availableTeamMembers.Add(new PersonModel { FirstName = "Jane", LastName = "Dough"});
+            availableTeamMembers.Add(new PersonModel { FirstName = "John", LastName = "Dough" });
+            availableTeamMembers.Add(new PersonModel { FirstName = "Jane", LastName = "Dough" });
 
             selectedTeamMembers.Add(new PersonModel { FirstName = "Suzy", LastName = "Smith" });
             selectedTeamMembers.Add(new PersonModel { FirstName = "Mr", LastName = "Anderson" });
 
         }
 
-        private void WireUpLists ()
+        private void WireUpLists()
         {
+            selectTeamMemberDropDown.DataSource = null;
             selectTeamMemberDropDown.DataSource = availableTeamMembers;
             selectTeamMemberDropDown.DisplayMember = "FullName";
 
+            teamMembersListBox.DataSource = null;
             teamMembersListBox.DataSource = selectedTeamMembers;
             teamMembersListBox.DisplayMember = "FullName";
 
@@ -56,7 +58,11 @@ namespace TrackUI
                 p.EmailAddress = emailValue.Text;
                 p.CellphoneNumber = cellphoneValue.Text;
 
-                GlobalConfig.Connection.CreatePerson(p);
+                p = GlobalConfig.Connection.CreatePerson(p);
+
+                selectedTeamMembers.Add(p);
+
+                WireUpLists();
 
                 firstNameValue.Text = "";
                 lastNameValue.Text = "";
@@ -89,6 +95,32 @@ namespace TrackUI
             }
 
             return true;
+        }
+
+        private void addMemberButton_Click(object sender, EventArgs e)
+        {
+            PersonModel p = selectTeamMemberDropDown.SelectedItem as PersonModel;
+
+            if (p != null)
+            {
+                availableTeamMembers.Remove(p);
+                selectedTeamMembers.Add(p);
+
+                WireUpLists(); 
+            }
+        }
+
+        private void RemoveSelectedMemberButton_Click(object sender, EventArgs e)
+        {
+            PersonModel p = teamMembersListBox.SelectedItem as PersonModel;
+
+            if (p != null)
+            {
+                selectedTeamMembers.Remove(p);
+                availableTeamMembers.Add(p);
+
+                WireUpLists(); 
+            }
         }
     }
 }
