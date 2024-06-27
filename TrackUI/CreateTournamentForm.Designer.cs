@@ -156,6 +156,7 @@
             createPrizeButton.TabIndex = 17;
             createPrizeButton.Text = "Create a Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
+            createPrizeButton.Click += createPrizeButton_Click;
             // 
             // tournamentTeamsListBox
             // 
