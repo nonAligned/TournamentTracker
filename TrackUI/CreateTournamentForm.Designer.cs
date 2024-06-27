@@ -40,8 +40,8 @@
             createPrizeButton = new Button();
             tournamentTeamsListBox = new ListBox();
             tournamentTeamsLabel = new Label();
-            deleteTeamButton = new Button();
-            deletePrizeButton = new Button();
+            removeTeamButton = new Button();
+            removePrizeButton = new Button();
             prizesLabel = new Label();
             prizesListBox = new ListBox();
             createTournamentButton = new Button();
@@ -180,35 +180,35 @@
             tournamentTeamsLabel.TabIndex = 19;
             tournamentTeamsLabel.Text = "Teams / Players";
             // 
-            // deleteTeamButton
+            // removeTeamButton
             // 
-            deleteTeamButton.FlatAppearance.BorderColor = Color.Silver;
-            deleteTeamButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
-            deleteTeamButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
-            deleteTeamButton.FlatStyle = FlatStyle.Flat;
-            deleteTeamButton.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            deleteTeamButton.ForeColor = Color.FromArgb(51, 153, 255);
-            deleteTeamButton.Location = new Point(638, 343);
-            deleteTeamButton.Name = "deleteTeamButton";
-            deleteTeamButton.Size = new Size(421, 56);
-            deleteTeamButton.TabIndex = 20;
-            deleteTeamButton.Text = "Delete Selected";
-            deleteTeamButton.UseVisualStyleBackColor = true;
+            removeTeamButton.FlatAppearance.BorderColor = Color.Silver;
+            removeTeamButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
+            removeTeamButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+            removeTeamButton.FlatStyle = FlatStyle.Flat;
+            removeTeamButton.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            removeTeamButton.ForeColor = Color.FromArgb(51, 153, 255);
+            removeTeamButton.Location = new Point(638, 343);
+            removeTeamButton.Name = "removeTeamButton";
+            removeTeamButton.Size = new Size(421, 56);
+            removeTeamButton.TabIndex = 20;
+            removeTeamButton.Text = "Remove Selected";
+            removeTeamButton.UseVisualStyleBackColor = true;
             // 
-            // deletePrizeButton
+            // removePrizeButton
             // 
-            deletePrizeButton.FlatAppearance.BorderColor = Color.Silver;
-            deletePrizeButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
-            deletePrizeButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
-            deletePrizeButton.FlatStyle = FlatStyle.Flat;
-            deletePrizeButton.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            deletePrizeButton.ForeColor = Color.FromArgb(51, 153, 255);
-            deletePrizeButton.Location = new Point(638, 663);
-            deletePrizeButton.Name = "deletePrizeButton";
-            deletePrizeButton.Size = new Size(421, 56);
-            deletePrizeButton.TabIndex = 23;
-            deletePrizeButton.Text = "Delete Selected";
-            deletePrizeButton.UseVisualStyleBackColor = true;
+            removePrizeButton.FlatAppearance.BorderColor = Color.Silver;
+            removePrizeButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
+            removePrizeButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+            removePrizeButton.FlatStyle = FlatStyle.Flat;
+            removePrizeButton.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            removePrizeButton.ForeColor = Color.FromArgb(51, 153, 255);
+            removePrizeButton.Location = new Point(638, 663);
+            removePrizeButton.Name = "removePrizeButton";
+            removePrizeButton.Size = new Size(421, 56);
+            removePrizeButton.TabIndex = 23;
+            removePrizeButton.Text = "Remove Selected";
+            removePrizeButton.UseVisualStyleBackColor = true;
             // 
             // prizesLabel
             // 
@@ -253,10 +253,10 @@
             BackColor = Color.White;
             ClientSize = new Size(1115, 832);
             Controls.Add(createTournamentButton);
-            Controls.Add(deletePrizeButton);
+            Controls.Add(removePrizeButton);
             Controls.Add(prizesLabel);
             Controls.Add(prizesListBox);
-            Controls.Add(deleteTeamButton);
+            Controls.Add(removeTeamButton);
             Controls.Add(tournamentTeamsLabel);
             Controls.Add(tournamentTeamsListBox);
             Controls.Add(createPrizeButton);
@@ -291,8 +291,8 @@
         private Button createPrizeButton;
         private ListBox tournamentTeamsListBox;
         private Label tournamentTeamsLabel;
-        private Button deleteTeamButton;
-        private Button deletePrizeButton;
+        private Button removeTeamButton;
+        private Button removePrizeButton;
         private Label prizesLabel;
         private ListBox prizesListBox;
         private Button createTournamentButton;
