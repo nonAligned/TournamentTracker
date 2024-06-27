@@ -38,8 +38,8 @@
             createNewTeamLink = new LinkLabel();
             addTeamButton = new Button();
             createPrizeButton = new Button();
-            tournamentPlayersListBox = new ListBox();
-            tournamentPlayersLabel = new Label();
+            tournamentTeamsListBox = new ListBox();
+            tournamentTeamsLabel = new Label();
             deleteTeamButton = new Button();
             deletePrizeButton = new Button();
             prizesLabel = new Label();
@@ -156,26 +156,26 @@
             createPrizeButton.Text = "Create a Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
             // 
-            // tournamentPlayersListBox
+            // tournamentTeamsListBox
             // 
-            tournamentPlayersListBox.BorderStyle = BorderStyle.FixedSingle;
-            tournamentPlayersListBox.FormattingEnabled = true;
-            tournamentPlayersListBox.ItemHeight = 37;
-            tournamentPlayersListBox.Location = new Point(638, 145);
-            tournamentPlayersListBox.Name = "tournamentPlayersListBox";
-            tournamentPlayersListBox.Size = new Size(421, 187);
-            tournamentPlayersListBox.TabIndex = 18;
+            tournamentTeamsListBox.BorderStyle = BorderStyle.FixedSingle;
+            tournamentTeamsListBox.FormattingEnabled = true;
+            tournamentTeamsListBox.ItemHeight = 37;
+            tournamentTeamsListBox.Location = new Point(638, 145);
+            tournamentTeamsListBox.Name = "tournamentTeamsListBox";
+            tournamentTeamsListBox.Size = new Size(421, 187);
+            tournamentTeamsListBox.TabIndex = 18;
             // 
-            // tournamentPlayersLabel
+            // tournamentTeamsLabel
             // 
-            tournamentPlayersLabel.AutoSize = true;
-            tournamentPlayersLabel.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tournamentPlayersLabel.ForeColor = Color.FromArgb(51, 153, 255);
-            tournamentPlayersLabel.Location = new Point(638, 93);
-            tournamentPlayersLabel.Name = "tournamentPlayersLabel";
-            tournamentPlayersLabel.Size = new Size(248, 46);
-            tournamentPlayersLabel.TabIndex = 19;
-            tournamentPlayersLabel.Text = "Teams / Players";
+            tournamentTeamsLabel.AutoSize = true;
+            tournamentTeamsLabel.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tournamentTeamsLabel.ForeColor = Color.FromArgb(51, 153, 255);
+            tournamentTeamsLabel.Location = new Point(638, 93);
+            tournamentTeamsLabel.Name = "tournamentTeamsLabel";
+            tournamentTeamsLabel.Size = new Size(248, 46);
+            tournamentTeamsLabel.TabIndex = 19;
+            tournamentTeamsLabel.Text = "Teams / Players";
             // 
             // deleteTeamButton
             // 
@@ -254,8 +254,8 @@
             Controls.Add(prizesLabel);
             Controls.Add(prizesListBox);
             Controls.Add(deleteTeamButton);
-            Controls.Add(tournamentPlayersLabel);
-            Controls.Add(tournamentPlayersListBox);
+            Controls.Add(tournamentTeamsLabel);
+            Controls.Add(tournamentTeamsListBox);
             Controls.Add(createPrizeButton);
             Controls.Add(addTeamButton);
             Controls.Add(createNewTeamLink);
@@ -286,8 +286,8 @@
         private LinkLabel createNewTeamLink;
         private Button addTeamButton;
         private Button createPrizeButton;
-        private ListBox tournamentPlayersListBox;
-        private Label tournamentPlayersLabel;
+        private ListBox tournamentTeamsListBox;
+        private Label tournamentTeamsLabel;
         private Button deleteTeamButton;
         private Button deletePrizeButton;
         private Label prizesLabel;
