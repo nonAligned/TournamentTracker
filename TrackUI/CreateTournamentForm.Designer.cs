@@ -125,6 +125,7 @@
             createNewTeamLink.TabIndex = 15;
             createNewTeamLink.TabStop = true;
             createNewTeamLink.Text = "Create New";
+            createNewTeamLink.LinkClicked += createNewTeamLink_LinkClicked;
             // 
             // addTeamButton
             // 
