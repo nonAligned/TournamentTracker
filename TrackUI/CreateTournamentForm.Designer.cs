@@ -215,9 +215,9 @@
             prizesLabel.ForeColor = Color.FromArgb(51, 153, 255);
             prizesLabel.Location = new Point(638, 418);
             prizesLabel.Name = "prizesLabel";
-            prizesLabel.Size = new Size(248, 46);
+            prizesLabel.Size = new Size(106, 46);
             prizesLabel.TabIndex = 22;
-            prizesLabel.Text = "Teams / Players";
+            prizesLabel.Text = "Prizes";
             // 
             // prizesListBox
             // 
@@ -268,7 +268,7 @@
             Controls.Add(tournamentNameLabel);
             Controls.Add(headerLabel);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "CreateTournamentForm";
             Text = "Create Tournament";
             ResumeLayout(false);
