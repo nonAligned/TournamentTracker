@@ -41,7 +41,7 @@ namespace TrackUI
 
         private void addTeamButton_Click(object sender, EventArgs e)
         {
-            TeamModel t = selectTeamDropDown.SelectedItem as TeamModel;
+            TeamModel t = (TeamModel)selectTeamDropDown.SelectedItem;
 
             if (t != null)
             {

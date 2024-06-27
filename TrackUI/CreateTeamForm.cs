@@ -99,7 +99,7 @@ namespace TrackUI
 
         private void addMemberButton_Click(object sender, EventArgs e)
         {
-            PersonModel p = selectTeamMemberDropDown.SelectedItem as PersonModel;
+            PersonModel p = (PersonModel)selectTeamMemberDropDown.SelectedItem;
 
             if (p != null)
             {
@@ -112,7 +112,7 @@ namespace TrackUI
 
         private void RemoveSelectedMemberButton_Click(object sender, EventArgs e)
         {
-            PersonModel p = teamMembersListBox.SelectedItem as PersonModel;
+            PersonModel p = (PersonModel)teamMembersListBox.SelectedItem;
 
             if (p != null)
             {
