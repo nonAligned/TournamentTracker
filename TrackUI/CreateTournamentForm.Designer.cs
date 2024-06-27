@@ -76,7 +76,6 @@
             tournamentNameLabel.Size = new Size(298, 46);
             tournamentNameLabel.TabIndex = 9;
             tournamentNameLabel.Text = "Tournament Name";
-            tournamentNameLabel.Click += teamOneScoreLabel_Click;
             // 
             // entryFeeValue
             // 
