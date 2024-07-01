@@ -59,7 +59,7 @@ namespace TrackerLibrary
             {
                 currentMatchup.Entries.Add(new MatchupEntryModel { TeamCompeting = team });
 
-                if (numberOfByes > 0 || currentMatchup.Entries.Count == 1)
+                if (numberOfByes > 0 || currentMatchup.Entries.Count > 1)
                 {
                     currentMatchup.MatchupRound = 1;
                     output.Add(currentMatchup);
