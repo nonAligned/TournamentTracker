@@ -27,5 +27,11 @@ namespace TrackUI
             loadExistingTournamentDropDown.DataSource = tournaments;
             loadExistingTournamentDropDown.DisplayMember = "TournamentName";
         }
+
+        private void createTournamentButton_Click(object sender, EventArgs e)
+        {
+            CreateTournamentForm frm = new CreateTournamentForm();
+            frm.Show();
+        }
     }
 }
