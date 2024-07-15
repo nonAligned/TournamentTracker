@@ -255,9 +255,9 @@ namespace TrackerLibrary.DataAccess
 
                         foreach(var me in m.Entries)
                         {
-                            if(me.TeamCopmetingId > 0)
+                            if(me.TeamCompetingId > 0)
                             {
-                                me.TeamCompeting = allTeams.Where(x => x.Id == me.TeamCopmetingId).First();
+                                me.TeamCompeting = allTeams.Where(x => x.Id == me.TeamCompetingId).First();
                             }
 
                             if(me.ParentMatchupId > 0)
