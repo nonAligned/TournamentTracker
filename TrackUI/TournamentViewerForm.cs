@@ -172,7 +172,7 @@ namespace TrackUI
             {
                 output = "You did not enter the score for either team.";
             }
-            else if (teamTwoScore == teamTwoScore)
+            else if (teamOneScore == teamTwoScore)
             {
                 output = "We do not allow ties in this application.";
             }
